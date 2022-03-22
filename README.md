@@ -3,7 +3,7 @@
 This template should help get you started developing with Varlet UI Library. 
 As a recommendation, we use Vue3 and TypeScript and Vite on this template. 
 The template uses Vue 3 `<script setup>` SFCs and `reactive transform`, 
-check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) and [reactive transform docs] to learn more.
+check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) and [reactive transform docs](https://vuejs.org/guide/extras/reactivity-transform.html) to learn more.
 
 ## Features
 
