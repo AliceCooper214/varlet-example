@@ -23,7 +23,7 @@ defineProps<{ msg: string }>()
 <style scoped>
 .msg {
   text-align: center;
-  color: #333;
+  color: #666;
   font-size: 20px;
   margin-top: 10px;
 }
