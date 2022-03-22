@@ -5,6 +5,8 @@ module.exports = {
       unitPrecision: 6,
       unitToConvert: 'px',
       propList: ['*'],
+      // pvi is postcss px to viewport ignore
+      selectorBlackList: ['.pvi']
     }
   }
 }

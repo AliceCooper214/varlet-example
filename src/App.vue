@@ -9,6 +9,18 @@
 </template>
 
 <style lang="less">
+@keyframes fade-in {
+  from {
+    transform: scale(0.9);
+    opacity: .1;
+  }
+
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -24,6 +36,7 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  animation: fade-in 1s forwards;
 
   .project-container {
     display: flex;

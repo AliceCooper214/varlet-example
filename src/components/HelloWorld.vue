@@ -3,13 +3,15 @@ defineProps<{ msg: string }>()
 </script>
 
 <template>
-  <h2>{{ msg }}</h2>
+  <div class="msg">{{ msg }}</div>
 
-  <p>
+  <div class="br"></div>
+
+  <div class="desc">
     See
-    <code>README.md</code>
+    <code class="pvi-code">README.md</code>
     for more information.
-  </p>
+  </div>
 
   <p>
     <a href="https://varlet.gitee.io/varlet-ui/#/en-US/home" target="_blank">Varlet Docs</a>
@@ -19,8 +21,11 @@ defineProps<{ msg: string }>()
 </template>
 
 <style scoped>
-h2 {
+.msg {
   text-align: center;
+  color: #333;
+  font-size: 20px;
+  margin-top: 10px;
 }
 
 a {
@@ -29,13 +34,25 @@ a {
 
 span {
   margin: 0 10px;
-  color: #3a7afe;
+  color: #888;
 }
 
-code {
+.desc {
+  margin-top: 10px;
+}
+
+.pvi-code {
   background-color: #eee;
   padding: 2px 4px;
-  border-radius: 4px;
+  border-radius: 10px;
   color: #304455;
+  margin: 2px 6px;
+}
+
+.br {
+  width: 50%;
+  height: 1px;
+  background: #ddd;
+  margin-top: 10px;
 }
 </style>
