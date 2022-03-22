@@ -3,7 +3,7 @@ defineProps<{ msg: string }>()
 </script>
 
 <template>
-  <h1>{{ msg }}</h1>
+  <h2>{{ msg }}</h2>
 
   <p>
     See
@@ -13,19 +13,23 @@ defineProps<{ msg: string }>()
 
   <p>
     <a href="https://varlet.gitee.io/varlet-ui/#/en-US/home" target="_blank">Varlet Docs</a>
-    |
-    <a href="https://v3.vuejs.org/" target="_blank">Vue 3 Docs</a>
+    <span>|</span>
+    <a href="https://v3.vuejs.org/" target="_blank">Vue3 Docs</a>
   </p>
 </template>
 
 <style scoped>
-a {
-  color: #42b983;
+h2 {
+  text-align: center;
 }
 
-label {
-  margin: 0 0.5em;
-  font-weight: bold;
+a {
+  color: #3a7afe;
+}
+
+span {
+  margin: 0 10px;
+  color: #3a7afe;
 }
 
 code {

@@ -1,35 +1,43 @@
 <template>
-  <div class="varlet">
-    <img alt="Varlet logo" src="./assets/logo.png" />
-    <div class="varlet-name">VARLET</div>
+  <div class="app-container">
+    <div class="project-container">
+      <img class="logo" src="./assets/logo.png" alt="logo" />
+      <div class="name">VARLET</div>
+    </div>
+    <hello-world msg="Material design mobile component library for Vue3" />
   </div>
-  <HelloWorld msg="Material design mobile component library for Vue3" />
 </template>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style lang="less">
+* {
+  box-sizing: border-box;
 }
 
-.varlet {
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
   display: flex;
-  align-items: center;
   justify-content: center;
-}
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
 
-.varlet > img {
-  height: 60px;
-  width: 60px;
-  margin-right: 20px;
-}
+  .project-container {
+    display: flex;
+    align-items: center;
 
-.varlet-name {
-  font-size: 60px;
-  font-family: Roboto;
+    .logo {
+      width: 36px;
+      margin-right: 16px;
+    }
+
+    .name {
+      font-size: 32px;
+      color: #555;
+    }
+  }
 }
 </style>
