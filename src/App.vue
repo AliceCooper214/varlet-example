@@ -3,5 +3,24 @@ const msg = $ref('hello varlet!')
 </script>
 
 <template>
-  <var-button type="primary">{{ msg }}</var-button>
+  <div class="app-container">
+    <var-button type="primary">{{ msg }}</var-button>
+  </div>
 </template>
+
+<style lang="less">
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  padding: 20px;
+  min-height: 100vh;
+  background: #fff;
+}
+</style>

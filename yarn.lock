@@ -271,6 +271,11 @@
     fs-extra "^9.0.1"
     webfont "^9.0.0"
 
+"@varlet/touch-emulator@latest":
+  version "1.27.8"
+  resolved "https://registry.npmjs.org/@varlet/touch-emulator/-/touch-emulator-1.27.8.tgz#39fa47c9b006034069f899f6f05676ababe116a5"
+  integrity sha512-tIib4RE3xSahQTUtSae6iHF1umLpJ1M7bKMUeaZexF2mvJmysjRZkEe3oD3ymfAWmJbBwTA6oKEWkojxqlRhkA==
+
 "@varlet/ui@latest":
   version "1.26.9"
   resolved "https://registry.npmjs.org/@varlet/ui/-/ui-1.26.9.tgz#9c95eb6d03af5c370f328fb4ff414cfc69067c69"
