@@ -1,26 +1,17 @@
 <script setup lang="ts">
-const msg = $ref('hello varlet!')
+function handleClick() {
+  Snackbar('Hello')
+}
 </script>
 
 <template>
-  <div class="app-container">
-    <var-button type="primary">{{ msg }}</var-button>
-  </div>
+  <var-button @click="handleClick">Say Hello</var-button>
 </template>
 
-<style lang="less">
-* {
-  box-sizing: border-box;
-}
-
+<style>
 body {
-  margin: 0;
-  padding: 0;
-}
-
-.app-container {
-  padding: 20px;
-  min-height: 100vh;
-  background: #fff;
+  transition: background-color .25s, color .25s;
+  color: var(--color-text);
+  background-color: var(--color-body);
 }
 </style>

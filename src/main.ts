@@ -1,6 +1,8 @@
 import App from './App.vue'
-import '@varlet/touch-emulator'
 import { createApp } from 'vue'
-import 'uno.css'
+import { Themes } from '@varlet/ui'
+import '@varlet/touch-emulator'
+
+StyleProvider(Themes.dark)
 
 createApp(App).mount('#app')

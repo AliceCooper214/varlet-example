@@ -1,45 +1,40 @@
-# Varlet H5 Lite Starter
+# Vite App
 
-This template should help get you started developing with Varlet UI Library. 
-As a recommendation, we use Vue3 and TypeScript and Vite on this template. 
+This template should help get you started developing with Vue 3 in Vite.
 
-The template uses Vue 3 `<script setup>` SFCs and `reactive transform`, 
-check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) and 
-[reactive transform docs](https://vuejs.org/guide/extras/reactivity-transform.html) to learn more.
+## Recommended IDE Setup
 
-## Quickstart
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-We recommend using `degit` to fetch template
+## Type Support for `.vue` Imports in TS
 
-```shell
-npm i degit -g
-# or
-yarn global add degit
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+
+If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+
+1. Disable the built-in TypeScript Extension
+    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+yarn
 ```
 
-```shell
-# fetch template
-degit varletjs/varlet-h5-lite-starter your-project-name
-# into folder
-cd your-project-name
-# install dependencies
-yarn
-# start dev server
+### Compile and Hot-Reload for Development
+
+```sh
 yarn dev
 ```
 
-## Features
+### Type-Check, Compile and Minify for Production
 
-### Varlet UI
-
-[Varlet](https://varlet.gitee.io/varlet-ui/#/en-US/home) is a Material design mobile component library developed based on Vue3, 
-developed and maintained by partners in the community.
-
-### Import On Demand
-
-The on-demand import avoids the full import of components and can effectively reduce the size of the distribution package. 
-The [unplugin-vue-components](https://github.com/antfu/unplugin-vue-components) will automatically import component logic and style files and use components.
-
-### Mobile Responsive
-
-We use the [postcss-px-to-viewport](https://github.com/evrone/postcss-px-to-viewport) to convert px to vw to adapt to mobile devices
+```sh
+yarn build
+```
