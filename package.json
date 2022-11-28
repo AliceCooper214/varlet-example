@@ -8,8 +8,8 @@
     "type-check": "vue-tsc --noEmit"
   },
   "dependencies": {
-    "@varlet/touch-emulator": "^2.2.1",
-    "@varlet/ui": "^2.2.1",
+    "@varlet/touch-emulator": "^2.3.1",
+    "@varlet/ui": "^2.3.1",
     "vue": "^3.2.41"
   },
   "devDependencies": {
